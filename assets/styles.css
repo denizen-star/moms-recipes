@@ -141,6 +141,36 @@ ol, ul{margin:8px 0 0}
 .recipe-card::before{left:12px}
 .recipe-card::after{right:12px;transform:rotate(3deg)}
 
-/* Recipe cover image */
 .container{max-width:1240px;margin:0 auto;padding:0 16px}
+
+/* Recipe cover image */
+
+/* Mobile header tweaks */
+@media (max-width:640px){
+  .site-header .container{padding:10px 12px}
+  .site-bar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+  .site-header h1{font-size:22px}
+  .subtitle{font-size:13px}
+  .site-nav{
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  .site-nav a{
+    padding:4px 8px;
+    font-size:12px;
+  }
+  .controls{
+    margin-top:8px;
+    gap:6px;
+  }
+  .search-label input{
+    padding:8px 32px 8px 8px;
+    font-size:13px;
+  }
+}
+
 
