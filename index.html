@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Family Recipe Cookbook</title>
+    <meta name="description" content="A curated family cookbook of cakes, breads, savory dishes, and helpful household tips.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-bar">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <h1 style="margin:0;">The Family Recipe Cookbook</h1>
+          </div>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="cakes-and-sweets.html">Cakes &amp; Sweets</a>
+            <a href="breads-and-breakfast.html">Breads &amp; Breakfast</a>
+            <a href="savory-and-homemade.html">Savory &amp; Homemade</a>
+            <a href="household-tips.html">Household Tips</a>
+          </nav>
+        </div>
+        <p class="subtitle">Collected from Mom’s notebook • Preserving our favorites</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" aria-label="Introduction">
+        <h2>Welcome</h2>
+        <p>Browse our family’s favorite cakes, breads, savory dishes, and handy kitchen tips. Use the section pages for search and quick filtering.</p>
+        <div class="feature-grid">
+          <a class="feature-card" href="cakes-and-sweets.html">
+            <div class="feature-cover" style="background-image:url('assets/img/Cakes.png'), linear-gradient(#eee,#ddd)"></div>
+            <div class="feature-body">
+              <h3>Cakes &amp; Sweets</h3>
+              <p>Pound cakes, sponges, flans, and more.</p>
+            </div>
+          </a>
+          <a class="feature-card" href="breads-and-breakfast.html">
+            <div class="feature-cover" style="background-image:url('assets/img/Frances.png'), linear-gradient(#eee,#ddd)"></div>
+            <div class="feature-body">
+              <h3>Breads &amp; Breakfast</h3>
+              <p>Biscuits, buns, breads, pizza base, rolls.</p>
+            </div>
+          </a>
+          <a class="feature-card" href="savory-and-homemade.html">
+            <div class="feature-cover" style="background-image:url('assets/img/pizza.png'), linear-gradient(#eee,#ddd)"></div>
+            <div class="feature-body">
+              <h3>Savory &amp; Homemade</h3>
+              <p>Tortillas, dips, fritters, cheeses, and more.</p>
+            </div>
+          </a>
+          <a class="feature-card" href="household-tips.html">
+            <div class="feature-cover" style="background-image:url('assets/img/Cleaning.png'), linear-gradient(#eee,#ddd)"></div>
+            <div class="feature-body">
+              <h3>Household Tips</h3>
+              <p>DIY kitchen cleaners and alternatives.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Explore the cookbook</h2>
+        <ul>
+          <li><a href="cakes-and-sweets.html">Cakes &amp; Sweets</a></li>
+          <li><a href="breads-and-breakfast.html">Breads &amp; Breakfast</a></li>
+          <li><a href="savory-and-homemade.html">Savory &amp; Homemade</a></li>
+          <li><a href="household-tips.html">Household Tips</a></li>
+        </ul>
+      </nav>
+      <section class="section-content" style="grid-template-columns:1fr 1fr;">
+        <a class="recipe-card" href="cakes-and-sweets.html" aria-label="Open Cakes and Sweets">
+          <h3>Cakes &amp; Sweets</h3>
+          <p class="image-note">Cakes, pound cakes, sponges, flans, and more.</p>
+        </a>
+        <a class="recipe-card" href="breads-and-breakfast.html" aria-label="Open Breads and Breakfast">
+          <h3>Breads &amp; Breakfast</h3>
+          <p class="image-note">Biscuits, buns, breads, pizza base, rolls.</p>
+        </a>
+        <a class="recipe-card" href="savory-and-homemade.html" aria-label="Open Savory and Homemade">
+          <h3>Savory &amp; Homemade</h3>
+          <p class="image-note">Tortillas, dips, fritters, cheeses, and more.</p>
+        </a>
+        <a class="recipe-card" href="household-tips.html" aria-label="Open Household Tips">
+          <h3>Household Tips</h3>
+          <p class="image-note">DIY kitchen cleaners and alternatives.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Made with love for family. © <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
+
+

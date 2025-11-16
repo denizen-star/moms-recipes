@@ -1,0 +1,50 @@
+Current recipe → image mappings
+
+[Cakes & Sweets]
+Lemon Pound Cake -> assets/img/lemon-pound-cake.png
+Cream Cheese Pound Cake -> assets/img/cream-cheese-pound-cake.png
+Butter Cake (Unique Recipe) -> assets/img/butter-cake-unique-recipe.png
+Bizocho de la Abuela -> assets/img/bizocho-de-la-abuela.png
+Trini Recipe Sponge Cake -> assets/img/trini-recipe-sponge-cake.png
+5 Cup Cake -> assets/img/5-cup-cake.png
+Flan de Bananas -> assets/img/flan-de-bananas.png
+Pastel de Maíz (Corn Cake) -> assets/img/pastel-de-maiz-corn-cake.png
+Bizcocho de Limón (Lemon Cake) -> assets/img/bizcocho-de-limon-lemon-cake.png
+Torta Volteada de Piña -> assets/img/torta-volteada-de-pina.png
+Pudín de V (Pudding V) -> assets/img/pudin-de-v-pudding-v.png
+Budín de Naranja (Orange Cake) -> assets/img/budin-de-naranja-orange-cake.png
+Torta (Oct 23, 2022) -> assets/img/torta-oct-23-2022.png
+Easy Fruit Cake -> assets/img/easy-fruit-cake.png
+BIZCOCHITO -> assets/img/bizcochito.png
+White Chocolate Peppermint Cake -> assets/img/white-chocolate-peppermint-cake.png
+Chocolate Cake (Bakeable) -> assets/img/chocolate-cake-bakeable.png
+Lemon Sponge Cake (Sept 20, 2021) -> assets/img/lemon-sponge-cake-sept-20-2021.png
+Borrens Post Lemon Cake -> assets/img/borrens-post-lemon-cake.png
+
+[Breads & Breakfast]
+2-Ingredient Biscuits -> assets/img/2-ingredient-biscuits.png
+Raisin Buns (12 Buns) -> assets/img/raisin-buns-12-buns.png
+Cookist (Savory Fritters) -> assets/img/cookist-savory-fritters.png
+Pan de Licuadora (Blender Bread) -> assets/img/pan-de-licuadora-blender-bread.png
+Pan Francés (French Bread) -> assets/img/pan-frances-french-bread.png
+Make your own Pizza! (Quick) -> assets/img/make-your-own-pizza-quick.png
+Bread in a bag -> assets/img/bread-in-a-bag.png
+Cinnamon Rolls -> assets/img/cinnamon-rolls.png
+Orange Buns -> assets/img/orange-buns.png
+Hops Bread -> assets/img/hops-bread.png
+
+[Savory & Homemade]
+Tortilla de Papa -> assets/img/tortilla-de-papa.png
+Mayonesa de Aguacate -> assets/img/mayonesa-de-aguacate.png
+
+[No image yet in assets/img]
+Buñuelos de Bacalao
+Tarta de Sésamo (Quinoa Pie)
+Queso Casero (Homemade Cheese)
+Queso Ricotta
+Queso Fresco Blanco
+Batido de Avena (Oatmeal Pancake)
+Clean Dirty Pots (Anti-Grease)
+Clean Dirty Pots (Alternative)
+
+

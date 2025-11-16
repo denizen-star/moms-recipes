@@ -1,0 +1,146 @@
+/* Base Reset and Theme */
+:root{
+  --bg:#fffaf3;               /* warm cream */
+  --paper:#fffdf8;            /* paper white */
+  --ink:#3f3a37;              /* soft brown/charcoal */
+  --muted:#7b6f66;            /* warm muted */
+  --accent:#d97757;           /* soft terracotta */
+  --accent-2:#7cb59a;         /* sage green */
+  --border:#efe7dc;           /* parchment edge */
+  --shadow:0 4px 12px rgba(63,58,55,.08),0 2px 6px rgba(63,58,55,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Merriweather", Georgia, "Times New Roman", Times, serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+.container{max-width:1000px;margin:0 auto;padding:0 16px}
+
+/* Header */
+.site-header{
+  background:var(--paper);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(8px);
+}
+.site-header .container{padding:18px 16px}
+.site-header h1{
+  margin:0;font-weight:900;letter-spacing:-0.01em;
+  font-family:"Shadows Into Light", "Comic Sans MS", "Comic Sans", cursive;
+  font-size:28px;
+}
+.subtitle{margin:4px 0 0;color:var(--muted);font-weight:400}
+.controls{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.search-label{position:relative;flex:1;min-width:240px}
+.search-label input{
+  width:100%;padding:12px 38px 12px 12px;border:1px solid var(--border);border-radius:10px;background:var(--paper);
+  box-shadow:var(--shadow);outline:none;transition:border-color .2s;
+}
+.search-label input:focus{border-color:var(--accent)}
+.kbd{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  font-size:12px;border:1px solid var(--border);padding:2px 6px;border-radius:6px;background:#f3f4f6;color:#374151;
+}
+.toggle-all, select{
+  border:1px solid var(--border);background:var(--paper);padding:10px 12px;border-radius:10px;cursor:pointer;
+  box-shadow:var(--shadow);color:var(--ink);
+}
+.toggle-all:hover{border-color:var(--accent)}
+
+/* TOC */
+.toc{margin:22px 0 8px;background:var(--paper);padding:14px;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}
+.toc h2{margin:0 0 8px}
+.toc ul{margin:0;padding-left:18px}
+.toc a{color:var(--accent);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+/* Sections */
+.recipe-section{margin:18px 0;background:var(--paper);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+.section-title{margin:0;border-bottom:1px solid var(--border);padding:6px}
+.collapse-btn{
+  width:100%;text-align:left;background:transparent;border:0;padding:12px 14px;font-size:18px;font-weight:700;cursor:pointer;
+  font-family:"Shadows Into Light", "Comic Sans MS", "Comic Sans", cursive;
+}
+.section-content{padding:10px;display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:720px){
+  .section-content{grid-template-columns:1fr 1fr}
+}
+
+/* Recipe Cards */
+.recipe-card{
+  border:1px solid var(--border);border-radius:12px;padding:12px;background:var(--paper);box-shadow:var(--shadow);
+  position:relative;overflow:visible
+}
+.recipe-card h3{margin-top:0;margin-bottom:6px}
+.image-note{margin:0 0 8px;color:var(--muted);font-size:14px}
+.meta{display:flex;gap:8px;margin:6px 0 10px}
+.tag{
+  font-size:12px;background:#fde7e0;color:#8a4934;border:1px solid #f5cfc2;padding:2px 8px;border-radius:999px
+}
+details{border-top:1px dashed var(--border);padding-top:8px;margin-top:8px}
+summary{cursor:pointer;font-weight:600}
+ol, ul{margin:8px 0 0}
+.notes{color:#7b5d3b;background:#fff5e8;border:1px solid #f7e3c9;border-radius:8px;padding:8px;margin-top:8px}
+
+/* Footer */
+.site-footer{margin:30px 0 40px;color:var(--muted);text-align:center}
+
+/* Search state */
+.is-hidden{display:none !important}
+
+/* Unified nav */
+.site-bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .logo{
+  width:34px;height:34px;border-radius:8px;background: radial-gradient(circle at 35% 35%, #f3d9a4, #f0b7a1 60%);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.site-nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.site-nav a{
+  color:var(--ink);text-decoration:none;border:1px solid var(--border);padding:8px 10px;border-radius:10px;background:var(--paper);
+}
+.site-nav a.active{border-color:var(--accent);color:var(--accent)}
+
+/* Hero and feature cards */
+.hero{
+  margin:18px 0;background:var(--paper);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);
+  padding:20px;display:grid;gap:10px
+}
+.hero h2{
+  margin:0;font-size:28px;
+  font-family:"Shadows Into Light", "Comic Sans MS", "Comic Sans", cursive;
+}
+.hero p{margin:0;color:var(--muted)}
+.feature-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+@media(min-width:720px){.feature-grid{grid-template-columns:1fr 1fr}}
+.feature-card{
+  display:block;border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;background:var(--paper);box-shadow:var(--shadow)
+}
+.feature-cover{
+  height:160px;background-size:cover;background-position:center;position:relative;
+}
+.feature-cover::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(255,250,243,0) 40%, rgba(255,250,243,.85) 100%);
+}
+.feature-body{padding:12px}
+.feature-body h3{
+  margin:0 0 4px;
+  font-family:"Shadows Into Light", "Comic Sans MS", "Comic Sans", cursive;
+  font-size:22px;
+}
+.feature-body p{margin:0;color:var(--muted)}
+
+/* Little tape corners for recipe cards */
+.recipe-card::before,
+.recipe-card::after{
+  content:"";position:absolute;width:38px;height:14px;background:#f7e6d3;
+  top:-7px;border:1px solid #e8d7c3;box-shadow:0 2px 4px rgba(0,0,0,.06);transform:rotate(-3deg)
+}
+.recipe-card::before{left:12px}
+.recipe-card::after{right:12px;transform:rotate(3deg)}
+
+/* Recipe cover image */
+.container{max-width:1240px;margin:0 auto;padding:0 16px}
+
